@@ -1,9 +1,11 @@
 # Bills On Time
 # Team Members
 Shabnam Shaik - Frontend developer
+
 Gahana Swetha - Backend developer
 # Clients
 Swarupa Pedapali
+
 Satya Narayana Gullapali
 # Statement Of Purpose
 # Project Vision
@@ -14,7 +16,7 @@ Database - Mongo db
 Analysis tool - codacy
 Deployment - Hereko
 # Functional Requirements
-User
+User : Our application just have a user with no admin. The user signs up and start adding bills into their account according to their convenience.
 # Working & Project Description
 Our application, Bills On Time is designed in such way that the user doesn't forget to pay their bills. 
 Since the user will already be logged in, the upcoming bill name and date will be displayed on the home page. 
@@ -34,7 +36,6 @@ reminding the users to pay their bills on time.
 ![login SignUp ViewBill page](images/image03.jpeg)
 
 ![Add Bill page](images/image04.jpeg)
-
 
 # Screen Flow
 # Authentication 
