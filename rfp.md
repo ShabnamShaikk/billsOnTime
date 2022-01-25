@@ -31,6 +31,10 @@ reminding the users to pay their bills on time.
 
 ![After login home page](images/image02.jpeg)
 
+![login SignUp ViewBill page](images/image03.jpeg)
+
+![Add Bill page](images/image04.jpeg)
+
 
 # Screen Flow
 # Authentication 
