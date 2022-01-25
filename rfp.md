@@ -25,7 +25,7 @@ so that the user can fill in personal bills like dentist bill, amazon bill or an
 Every Month or Current Month, so that the bills repeat according to the option we select. Thus, the purpose of the application is full filled by 
 reminding the users to pay their bills on time.
 # ER diagram
-![ER diagram] (/images/image05.jpeg)
+![ER diagram] (\images\image05.jpeg) 
 # UI sketches
 # Screen Flow
 # Authentication 
