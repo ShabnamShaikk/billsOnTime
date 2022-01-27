@@ -2,6 +2,7 @@
 # Team Members
 Shabnam Shaik - Frontend developer
 (S542362@nwmissouri.edu)
+
 Gahana Swetha - Backend developer
 
 (S541909@nwmissouri.edu)
@@ -32,7 +33,10 @@ User : Our application just have a user with no admin. The user signs up and sta
 
 # Working & Project Description
 Our application, Bills On Time is designed in such way that the user doesn't forget to pay their bills. 
-The header of the page contains Home Login Signup Addbill ViewBill pages. 
+The header of the page contains Home Login Signup Addbill ViewBill pages. The home page displays only the upcoming bill and due date. 
+Addbill is for the user to add new bills with the bill name, due date and if it's for every month or current month. ViewBill displays
+all the bills with the pending or paid status for the user to make understanding easy. The user login's with email authentication and 
+Signup's with giving his preferred id, password, email and name.
 
 # Screen Flow
 The user needs to register into our app by signing up with the asked required feilds. On clicking Login, the user log in's and looks out for the upcoming bills
@@ -44,18 +48,18 @@ Every Month or Current Month, so that the bills repeat according to the requirem
 
 # Authentication 
 Authentication should be done through Email, for Forgot Password.  An password reset link will be sent
-to the user on clicking forgot password to their given email id's.
+to the user on clicking forgot password to their given email id's. 
 
 # Entity-Relationship diagram
 ![ER diagram](/images/image05.jpeg) 
 # UI sketches
-## Home page
+### Home page
 ![Home page](/images/image01.jpeg)
-## Home page after logging_in
+### Home page after logging_in
 ![After login home page](images/image02.jpeg)
-## Login SignUp ViewBill pages
+### Login SignUp ViewBill pages
 ![login SignUp ViewBill page](images/image03.jpeg)
-## AddBill page
+### AddBill page
 ![Add Bill page](images/image04.jpeg)
 
 # Performance Metrics
