@@ -1,12 +1,19 @@
 # Bills On Time
 # Team Members
 Shabnam Shaik - Frontend developer
-
+(S542362@nwmissouri.edu)
 Gahana Swetha - Backend developer
-# Clients
-Swarupa Pedapali
 
-Satya Narayana Gullapali
+(S541909@nwmissouri.edu)
+
+# Clients
+Swarupa Pedapali 
+
+Contact -  S542301@nwmissouri.edu
+
+Satya Narayana Gullapali - 
+ 
+Contact - S542301@nwmissouri.edu 
 # Statement Of Purpose
 # Project Vision
 # Stack
@@ -19,20 +26,27 @@ Database - Mongo db
 Analysis tool - codacy
 
 Deployment - Hereko
+
 # Functional Requirements
 User : Our application just have a user with no admin. The user signs up and start adding bills into their account according to their convenience.
 
 # Working & Project Description
 Our application, Bills On Time is designed in such way that the user doesn't forget to pay their bills. 
-Since the user will already be logged in, the upcoming bill name and date will be displayed on the home page. 
-If the user wants to see all the upcoming bills at a time in a month, the user needs to hit on "Continue" button on the bottom of the display.
-For updating bills, the user need to click on "addbill" button, which takes the user to calendar, then the user needs to select the following date
-which will then navigates the user to mention the type of bill like (electricity,wifi,rent etc.). There's even an option of "if other", 
-so that the user can fill in personal bills like dentist bill, amazon bill or any such things. In addition there is recursive option, 
-Every Month or Current Month, so that the bills repeat according to the option we select. Thus, the purpose of the application is full filled by 
-reminding the users to pay their bills on time.
+The header of the page contains Home Login Signup Addbill ViewBill pages. 
 
-# ER diagram
+# Screen Flow
+The user needs to register into our app by signing up with the asked required feilds. On clicking Login, the user log in's and looks out for the upcoming bills
+on the homepage display. If the user wants to see all the upcoming bills at a time in a month, the user needs to hit on "Continue" button on the bottom of the display.
+For updating bills, the user needs to click on "addbill" button, which navigates the user to calendar, then the user needs to select the following date
+which will then navigate the user to mention the type of bill like (electricity,wifi,rent etc.). There's even an option of "if other", 
+so that the user can customise  personal bills like dentist bill, amazon bill or any such things. In addition there is recursive option, 
+Every Month or Current Month, so that the bills repeat according to the requirement we select.
+
+# Authentication 
+Authentication should be done through Email, for Forgot Password.  An password reset link will be sent
+to the user on clicking forgot password to their given email id's.
+
+# Entity-Relationship diagram
 ![ER diagram](/images/image05.jpeg) 
 # UI sketches
 ## Home page
@@ -44,5 +58,8 @@ reminding the users to pay their bills on time.
 ## AddBill page
 ![Add Bill page](images/image04.jpeg)
 
-# Screen Flow
-# Authentication 
+# Performance Metrics
+1. User satisfaction - The application is helpful for the user's for remembering and reminding about their bills.
+2. Error Rates - Until & Unless, the data entered doesn't match or if the given information about the Bill is incorrect, the error rate is nearly zero.
+3. Avergae Response Time - The home screen takes around 5 seconds to apper. Navigation of pages is roughly 3-4 seconds.
+4. Application Availability -  Available and Responsive on all kinds of devices. 
