@@ -26,9 +26,8 @@ Contact -  S542301@nwmissouri.edu
 
 Satya Narayana Gullapali - 
  
-Contact - S542301@nwmissouri.edu 
-# Statement Of Purpose
-# Project Vision
+Contact - S542301@nwmissouri.edu
+
 # Stack
 Frontend - html with bootstrap framework
 
