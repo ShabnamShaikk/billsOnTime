@@ -8,8 +8,8 @@ Way to better manage your Bills on time:
 
 # Project Vision
 Bills on time is a daily used web application for paying all kinds of bills
-- This application is used to pay any kind of bills that are genareted from differnet sorces,
-- By this app we can also add the bills and there due date thorugh calendar 
+- This application is used to pay any kind of bills that are genareted from differnet sorces.
+- By this app we can also add the bills and there due date thorugh calendar.
 - Bills like electricity,wifi,rent etc can be payed by this app,personal bills can also serached and payed.
 - Every Month or Current Month, so that the bills repeat according to the option we select.
 
