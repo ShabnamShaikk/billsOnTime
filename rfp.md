@@ -7,8 +7,8 @@
  the purpose of making the user financially successfull and respectful.
 
 # Project Vision
-Bills on time is a daily used web application for paying all kinds of bills
-This application is used to pay any kind of bills that are genareted from differnet sorces.By this app we can also add the bills and there due date thorugh calendar.Bills like electricity,wifi,rent etc can be payed by this app,personal bills can also serached and payed.Every Month or Current Month, so that the bills repeat according to the option we select.
+Bills on time is a daily used web application for paying all kinds of bills. Below are the few our visions of project:
+Our application is used to pay any kind of bills that are generated from differnet sources.By this app we can also add the bills and there due date thorugh calendar.Bills like electricity,wifi,rent etc can be payed by this app and in addition personal bills can also be searched and payed,either every Month or current Month, so that the bills repeat according to the option we select.
 
 # Team Members
 Shabnam Shaik - Frontend developer
