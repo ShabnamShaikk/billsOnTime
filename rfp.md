@@ -2,23 +2,18 @@
 
 # Statement Of Purpose
 Way to better manage your Bills on time:
-- By paying bills on time is an important aspect of taking control of your financial life.
-- Paying bill on due and making a habit of paying them by the reduce strees and save money.
-- Billing in online can be easy and convenient to pay any kind of bills genareted.
+By paying bills on time is an important aspect of taking control of your financial life.Paying bill on due and making a habit of paying them by the reduce strees and save money.Billing in online can be easy and convenient to pay any kind of bills genareted.
 
 # Project Vision
 Bills on time is a daily used web application for paying all kinds of bills
-- This application is used to pay any kind of bills that are genareted from differnet sorces.
-- By this app we can also add the bills and there due date thorugh calendar.
-- Bills like electricity,wifi,rent etc can be payed by this app,personal bills can also serached and payed.
-- Every Month or Current Month, so that the bills repeat according to the option we select.
+This application is used to pay any kind of bills that are genareted from differnet sorces.By this app we can also add the bills and there due date thorugh calendar.Bills like electricity,wifi,rent etc can be payed by this app,personal bills can also serached and payed.Every Month or Current Month, so that the bills repeat according to the option we select.
 
 # Team Members
 Shabnam Shaik - Frontend developer
 
 (S542362@nwmissouri.edu)
 
-Gahana Swetha - Backend developer
+Gahana Swetha Sanagala- Backend developer
 
 (S541909@nwmissouri.edu)
 
