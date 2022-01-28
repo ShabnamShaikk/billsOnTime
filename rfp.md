@@ -1,8 +1,10 @@
 # Bills On Time
 
 # Statement Of Purpose
-Way to better manage your Bills on time:
-By paying bills on time is an important aspect of taking control of your financial life.Paying bill on due and making a habit of paying them by the reduce strees and save money.Billing in online can be easy and convenient to pay any kind of bills genareted.
+ Paying bills on time is an important aspect of taking control of your financial life and
+ paying bills before due and making a habit of it by paying them reduces strees and save money of the user.
+ Moreover, Billing in online can be easy and convenient to pay any kind of bills genareted. Our application states 
+ the purpose of making the user financially successfull and respectful.
 
 # Project Vision
 Bills on time is a daily used web application for paying all kinds of bills
