@@ -1,0 +1,30 @@
+﻿@page
+@model Project1.Pages.AllBillModel
+@{
+    ViewData["Title"] = "All Bill";
+}
+<h1>Hi, @ViewData["FullName"]</h1>
+<div><b>All Bills</b><br /></div>  
+<br />
+<table class="table table-bordered table-responsive table-hover">  
+    <tr>  
+        <th>Bill Name</th>  
+        <th>Amount($) </th>  
+        <th>Due Date</th>  
+        <th>Status</th>   
+    </tr>  
+    @if (@Model.PaidbillDetails != null)
+    {
+        @foreach (var d in @Model.PaidbillDetails)
+        {
+            <tr>  
+                <td>@d.BillType</td>  
+                <td>$@d.Amount</td>  
+                <td>@d.DueDate</td>   
+                <td>@d.Status</td>   
+
+            </tr>
+        }
+
+    }
+</table> 
