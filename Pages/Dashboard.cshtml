@@ -1,0 +1,77 @@
+﻿@page
+@model Project1.Pages.Shared.DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+    
+}
+
+
+
+
+<style>
+    .container2 {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+}
+
+.one2 {
+  width: 35%;
+  height: 200px;
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 5px 10px #EAEAEC;
+  float: left;
+  border-radius: 25px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+ background: rgb(249,249,255);
+background: linear-gradient(145deg, rgba(249,249,255,1) 93%, rgba(160,160,251,1) 100%);
+}
+
+
+.centerdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:10%;
+}
+.two2 {
+  margin-left: 55%;
+  height: 200px;
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 5px 10px #EAEAEC;
+  border-radius: 25px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+  background: rgb(249,249,255);
+background: linear-gradient(145deg, rgba(249,249,255,1) 93%, rgba(160,160,251,1) 100%);
+}
+</style>
+
+<h1>Hi, @ViewData["FullName"]</h1>
+<br />
+<br />
+<section class="container2">
+  <div class="one2">Paid Bills
+      <br />
+      <div class="centerdiv">
+      <strong style="font-size:200%;font-family: Arial;">
+
+
+          @Model.PaidCount
+      </strong>
+      </div>
+  </div>
+  <div class="two2">Unpaid Bills
+      <br />
+       <div class="centerdiv">
+      <strong style="font-size:200%;font-family: Arial;">
+
+
+          @Model.UnpaidCount
+      </strong>
+      </div>
+  </div>
+</section>
+

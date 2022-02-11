@@ -1,0 +1,145 @@
+﻿@page
+@model Project1.Pages.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+
+<!-- Form Name -->
+<legend>Sign Up Details</legend>
+
+<form autocomplete="one-time-code" method="post" >
+    <fieldset>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="FirstName">First Name</label>  
+  <div class="col-md-4">
+  <input id="FirstName" name="FirstName" autocomplete="one-time-code" type="text" placeholder="John" class="form-control input-md" required>
+    
+  </div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="LastName">Last Name</label>  
+  <div class="col-md-4">
+  <input id="LastName" name="LastName" autocomplete="one-time-code" type="text" placeholder="Smith" class="form-control input-md">
+  </div>
+</div>
+@*
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="LastName">User ID</label>  
+  <div class="col-md-4"><input type="Userid" style="opacity: 0;position: absolute;">
+  <input autocomplete="off" id="Userid" name="Userid" type="text" placeholder="jSmith" class="form-control input-md" required>
+  </div>
+</div>
+*@
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="EmailID">Email ID</label>  
+  <div class="col-md-4">
+  <input id="EmailID" name="EmailID" autocomplete="one-time-code" type="email" placeholder="JohnSmith@abc.com" class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<div class="form-group"> 
+    <label class="col-md-4 control-label" for="EmailID">Date of Birth</label> 
+    <div class="col-md-4">
+<select id="Month" class="combo">
+    @{
+        var currnt = DateTime.Now.Month;
+        var counter = currnt;
+        for (int i = 1; i < 13; i++)
+        {
+            if (counter > 12)
+            {
+                counter = 1;
+            }
+            <option value="@counter">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(counter)</option>
+            counter++;
+        }
+    }
+</select>
+<select id="Day" class="combo">
+    @{
+        counter = 1;
+        for (int i = 1; i < 32; i++)
+        {
+
+            <option>@counter</option>
+            counter++;
+        }
+    }
+</select>
+
+<select id="Year" class="combo">
+    @{
+        counter = 1980;
+        for (int i = 1; i < DateTime.Now.Year; i++)
+        {
+
+            <option>@counter</option>
+            counter++;
+        }
+    }
+</select>
+ </div>
+</div>
+
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Gender</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios" value="Male" checked="checked">
+      Male
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios" value="Female">
+      Female
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="EmailID">Password</label>  
+  <div class="col-md-4">
+  <input autocomplete="one-time-code" id="Password" name="Password" onclick="return IsEmpty();" type="password" placeholder="" class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+@if (@ViewData["DataStatus"] != "S") { 
+        <br/>
+        <div class="col-5">
+                
+                <input name="submit" type="submit" value="Add User" class="btn btn-primary"/>
+            </div>
+        } 
+        
+        @if (@ViewData["DataStatus"] == "S")
+        {
+            <br/>
+            <div class="col-5">
+                <p>User Added Succesfully!</p>
+            </div>
+        } 
+        @if (@ViewData["DataStatus"] == "F")
+        {
+            <br/>
+            <div class="col-5">
+                <p>Something Went Wrong Please ReTry!</p>
+                @if(@ViewData["EmStat"] == "E")
+                {
+                    <p>User ID Taken, Please Try Again</p>
+                }
+            </div>
+        }
+
+</fieldset>
+</form>
