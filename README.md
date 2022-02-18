@@ -4,7 +4,7 @@ Our application, Bills On Time is designed in such a way that the user doesn't f
 Shabnam Shaik (S542362@nwmissiouri.edu) - Frontend Developer 
 
 Gahana Swetha Sanagala ( S541909@nwmissouri.edu) - Backend Developer 
-# External Requirements
+# External Requirements 
 With the following stack we are developing our application:
 
 Frontend - html with bootstrap framework
