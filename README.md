@@ -13,7 +13,7 @@ Backend - .NET core with c#
 
 Database - Mongo db
 
-Analysis tool - codacy
+Analysis tool - codacy  
 
 Deployment - Hereko 
 
