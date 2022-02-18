@@ -8,7 +8,7 @@ Gahana Swetha Sanagala ( S541909@nwmissouri.edu) - Backend Developer
 With the following stack we are developing our application:
 
 Frontend - html with bootstrap framework
-
+ 
 Backend - .NET core with c#
 
 Database - Mongo db
