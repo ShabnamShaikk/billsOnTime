@@ -12,7 +12,7 @@ Frontend - html with bootstrap framework
 Backend - .NET core with c#
 
 Database - Mongo db
- 
+
 Analysis tool - codacy  
 
 Deployment - Hereko 
