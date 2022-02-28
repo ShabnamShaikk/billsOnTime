@@ -23,7 +23,7 @@ Analysis tool - codacy
 
 Deployment - Hereko 
 
-# Useful Link
+# Useful Links
 [Link to Wiki](https://github.com/ShabnamShaikk/billsOnTime/wiki)
 
 [Link to Issues](https://github.com/ShabnamShaikk/billsOnTime/issues)
