@@ -1,5 +1,7 @@
 # Project Name:  Bills On Time
+
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ShabnamShaikk_billsOnTime&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ShabnamShaikk_billsOnTime)
+
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bba298a1b2834699a3a74301fd7a80d9)](https://www.codacy.com/gh/ShabnamShaikk/billsOnTime/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ShabnamShaikk/billsOnTime&amp;utm_campaign=Badge_Grade)
 
