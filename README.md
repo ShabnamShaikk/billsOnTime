@@ -10,7 +10,7 @@ Our application, Bills On Time is designed in such a way that the user doesn't f
 Shabnam Shaik (S542362@nwmissiouri.edu) - Frontend Developer 
  
 Gahana Swetha Sanagala ( S541909@nwmissouri.edu) - Backend Developer 
-# External Requirements 
+#  Stack
 With the following stack we are developing our application:
 
 Frontend - html with bootstrap framework
@@ -19,9 +19,9 @@ Backend - .NET core with c#
 
 Database - Mongo db
 
-Analysis tool - codacy  
+# Deployement & SetUp
+The application is build using Visual Studio 2022 and is deployed in hereko. 
 
-Deployment - Hereko 
 # Sites
 [DocFx](https://github.com/ShabnamShaikk/billsontime-doc)
 
@@ -31,11 +31,12 @@ Deployment - Hereko
 
 # Security
 [Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)
+
 [Codacy]()
 
 '
 #  Links
-[Link to Heroku Depolyment)(billsontimeapp.herokuapp.com/)
+[Link to Heroku Depolyment](billsontimeapp.herokuapp.com/)
 
 [Link to Wiki](https://github.com/ShabnamShaikk/billsOnTime/wiki)
 
