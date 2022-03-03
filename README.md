@@ -34,7 +34,6 @@ The application is build using Visual Studio 2022 and is deployed in hereko.
 
 [Codacy]()
 
-'
 #  Links
 [Link to Heroku Depolyment](billsontimeapp.herokuapp.com/)
 
