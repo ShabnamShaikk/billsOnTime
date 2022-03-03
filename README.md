@@ -22,15 +22,30 @@ Database - Mongo db
 Analysis tool - codacy  
 
 Deployment - Hereko 
+# Sites
+[DocFx](https://github.com/ShabnamShaikk/billsontime-doc)
 
-# Useful Links
+[Swagger](https://github.com/ShabnamShaikk/swagger-billsontime)
+
+[Hosted Launch Site](https://swetha34.github.io/bills-on-time-doc/)
+
+# Security
+[Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)
+[Codacy]()
+
+'
+#  Links
+[Link to Heroku Depolyment)(billsontimeapp.herokuapp.com/)
+
 [Link to Wiki](https://github.com/ShabnamShaikk/billsOnTime/wiki)
 
 [Link to Issues](https://github.com/ShabnamShaikk/billsOnTime/issues)
 
-[Link to Action](https://github.com/ShabnamShaikk/billsOnTime/actions)
+[Link to Actions](https://github.com/ShabnamShaikk/billsOnTime/actions)
 
 [Link to Milestone](https://github.com/ShabnamShaikk/billsOnTime/milestones)
 
-### Rest of the application information will be updated as we work on it......
+[Link to RFP](https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md)
+
+[Link to Project Board](https://github.com/ShabnamShaikk/billsOnTime/projects/1)
   
