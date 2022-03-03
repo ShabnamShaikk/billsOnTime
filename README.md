@@ -32,7 +32,7 @@ The application is build using Visual Studio 2022 and is deployed in hereko.
 # Security
 [Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)
 
-[Codacy]()
+[Codacy](https://app.codacy.com/gh/ShabnamShaikk/billsOnTime/dashboard)
 
 #  Links
 [Link to Heroku Depolyment](billsontimeapp.herokuapp.com/)
