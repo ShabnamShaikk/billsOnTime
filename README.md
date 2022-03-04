@@ -30,21 +30,25 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 
 **Tip**: Setup will add Visual Studio Code to your %PATH%, so from the console you can type 'code .' to open VS Code on that folder. You will need to restart your console after the installation for the change to the %PATH% environmental variable to take effect.
 
-# Sites
+
+
+# Sites & Securtity
 **[DocFx](https://github.com/ShabnamShaikk/billsontime-doc)</br>**
 **[Swagger](https://github.com/ShabnamShaikk/swagger-billsontime)</br>**
 **[Hosted Launch Site/Contributor Guide](https://swetha34.github.io/bills-on-time-doc/)</br>**
-
-# Security
 **[Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)</br>**
 **[Codacy](https://app.codacy.com/gh/ShabnamShaikk/billsOnTime/dashboard)</br>**
 
-#  Links
-**[Link to Heroku Depolyment](billsontimeapp.herokuapp.com/)</br>**
-**[Link to Wiki](https://github.com/ShabnamShaikk/billsOnTime/wiki)</br>**
-**[Link to Issues](https://github.com/ShabnamShaikk/billsOnTime/issues)</br>**
-**[Link to Actions](https://github.com/ShabnamShaikk/billsOnTime/actions)</br>**
-**[Link to Milestone](https://github.com/ShabnamShaikk/billsOnTime/milestones)</br>**
-**[Link to RFP](https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md)</br>**
-**[Link to Project Board](https://github.com/ShabnamShaikk/billsOnTime/projects/1)</br>**
+# Useful Links for Application
+|  Link Name     | Clickable Links | 
+| :---        |    :----:   |   
+|Link to Heroku Depolyment    | [GO](billsontimeapp.herokuapp.com/)    | 
+| Link to Wiki |[GO](https://github.com/ShabnamShaikk/billsOnTime/wiki) |
+|Link to Issues| [GO](https://github.com/ShabnamShaikk/billsOnTime/issues) |
+|Link to Actions| [GO](https://github.com/ShabnamShaikk/billsOnTime/actions) |
+|Link to Milestone| [GO](https://github.com/ShabnamShaikk/billsOnTime/milestones) |
+|Link to RFP| [GO](https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md) |
+|Link to Project Board| [GO](https://github.com/ShabnamShaikk/billsOnTime/projects/1) |
+
+
   
