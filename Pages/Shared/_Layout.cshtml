@@ -78,6 +78,20 @@
             @RenderBody()
         </main>
     </div>
+
+    <app-footer _ngcontent-rry-c23="" _nghost-rry-c22=""  >
+        <nav _ngcontent-rry-c22="" class="navbar fixed-bottom navbar-light bg-white">
+            <div _ngcontent-rry-c22="" class="container-fluid" style="color:dimgray">
+                <a _ngcontent-rry-c22="" href="/home" class="navbar-brand" style="color: rgb(128 128 128);">
+                    <i _ngcontent-rry-c22="" class="devicon"></i></a>
+                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime" class="navbar-brand">
+                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> REPO</a>
+                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1" class="navbar-brand">
+                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> Working planing</a>
+            </div>
+        </nav>
+    </app-footer>
+
 @*     @if(Context.Request.Cookies["Username"] != null)
      {
         <footer class="border-top footer text-muted">
@@ -100,7 +114,21 @@
   window.location = $(this).find("a").attr("href"); 
   return false;
 });
+
+<app-footer _ngcontent-rry-c23="" _nghost-rry-c22=""  >
+        <nav _ngcontent-rry-c22="" class="navbar fixed-bottom navbar-light bg-white">
+            <div _ngcontent-rry-c22="" class="container-fluid" style="color:dimgray">
+                <a _ngcontent-rry-c22="" href="/home" class="navbar-brand" style="color: rgb(128 128 128);">
+                    <i _ngcontent-rry-c22="" class="devicon"></i></a>
+                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime" class="navbar-brand">
+                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> REPO</a>
+                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1" class="navbar-brand">
+                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> Working planing</a>
+            </div>
+        </nav>
+
 </script>
     @await RenderSectionAsync("Scripts", required: false)
+    
 </body>
 </html>
