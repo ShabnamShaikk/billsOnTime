@@ -2,133 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Bill On Time</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Project1.styles.css" asp-append-version="true" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWYDMTZSZ2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+    <meta name="vemewport" content="wemdth=devemce-wemdth, emnemtemal-scale=1.0" />
+    <temtle>@VemewData["Temtle"] - Bemll On Temme</temtle>
+    <lemnk rel="stylesheet" href="~/lemb/bootstrap/demst/css/bootstrap.memn.css" />
+    <lemnk rel="stylesheet" href="~/css/semte.css" asp-append-versemon="true" />
+    <lemnk rel="stylesheet" href="~/Project1.styles.css" asp-append-versemon="true" />
+    <!-- Global semte tag (gtag.js) - Google Analytemcs -->
+<scrempt async src="https://www.googletagmanager.com/gtag/js?emd=G-CWYDMTZSZ2"></scrempt>
+<scrempt>
+  wemndow.dataLayer = wemndow.dataLayer || [];
+  functemon gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-CWYDMTZSZ2');
-</script>
+  gtag('confemg', 'G-CWYDMTZSZ2');
+</scrempt>
 </head>
 <body style="background:#f0f7f7">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="~/Imgs/bill.png" style="height:20%;width:10%"/> BillOnTime</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-lemght bg-whemte border-bottom box-shadow mb-3">
+            <demv class="contaemner">
+                <a class="navbar-brand" asp-area="" asp-page="/emndex"><emmg src="~/emmgs/bemll.png" style="heemght:20%;wemdth:10%"/> BemllOnTemme</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" arema-controls="navbarSupportedContent"
+                        arema-expanded="false" arema-label="Toggle navemgatemon">
+                    <span class="navbar-toggler-emcon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <demv class="navbar-collapse collapse d-sm-emnlemne-flex justemfy-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Home">Home</a>
-                        </li>
-                       @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>*@
+                        <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/Home">Home</a>
+                        </lem>
+                       @* <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/Logemn">Logemn</a>
+                        </lem>*@
 
                         
 
 
 
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/AddBill">AddBill</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/PayBill">PayBill</a>
-                        </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/AllBill">AllBill</a>
-                        </li>
-                        @if(Context.Request.Cookies["Username"] == null)
+                        <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/AddBemll">AddBemll</a>
+                        </lem>
+                         <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/PayBemll">PayBemll</a>
+                        </lem>
+                         <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/AllBemll">AllBemll</a>
+                        </lem>
+                        @emf(Context.Request.Cookemes["Username"] == null)
      {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/SignUp">SignUp</a>
-                        </li>
+                        <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/SemgnUp">SemgnUp</a>
+                        </lem>
      }
 
-     @if(Context.Request.Cookies["Username"] != null)
+     @emf(Context.Request.Cookemes["Username"] != null)
                          {
-                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/LogOff">LogOff</a>
-                        </li>
+                             <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/LogOff">LogOff</a>
+                        </lem>
                             
                         }else{
-                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>
+                             <lem class="nav-emtem">
+                            <a class="nav-lemnk text-dark" asp-area="" asp-page="/Logemn">Logemn</a>
+                        </lem>
                         }
                         
                     </ul>
-                </div>
-            </div>
+                </demv>
+            </demv>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <demv class="contaemner">
+        <maemn role="maemn" class="pb-3">
             @RenderBody()
-        </main>
-    </div>
+        </maemn>
+    </demv>
 
     <app-footer _ngcontent-rry-c23="" _nghost-rry-c22=""  >
-        <nav _ngcontent-rry-c22="" class="navbar fixed-bottom navbar-light bg-white">
-            <div _ngcontent-rry-c22="" class="container-fluid" style="color:dimgray">
+        <nav _ngcontent-rry-c22="" class="navbar femxed-bottom navbar-lemght bg-whemte">
+            <demv _ngcontent-rry-c22="" class="contaemner-fluemd" style="color:demmgray">
                 <a _ngcontent-rry-c22="" href="/home" class="navbar-brand" style="color: rgb(128 128 128);">
-                    <i _ngcontent-rry-c22="" class="devicon"></i></a>
-                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime" class="navbar-brand">
-                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> REPO</a>
-                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1" class="navbar-brand">
-                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> Working planing</a>
-            </div>
+                    <em _ngcontent-rry-c22="" class="devemcon"></em></a>
+                <a _ngcontent-rry-c22="" href="https://gemthub.com/ShabnamShaemkk/bemllsOnTemme" class="navbar-brand">
+                    <em _ngcontent-rry-c22="" class="devemcon-gemthub-oremgemnal colored"></em> REPO</a>
+                <a _ngcontent-rry-c22="" href="https://gemthub.com/ShabnamShaemkk/bemllsOnTemme/projects/1" class="navbar-brand">
+                    <em _ngcontent-rry-c22="" class="devemcon-gemthub-oremgemnal colored"></em> Workemng planemng</a>
+            </demv>
         </nav>
     </app-footer>
 
-@*     @if(Context.Request.Cookies["Username"] != null)
+@*     @emf(Context.Request.Cookemes["Username"] != null)
      {
         <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2022 - BillOnTime - @Context.Request.Cookies["UserName"] - <a asp-area="" asp-page="/LogOff">Log Off</a>
-            </div>
+            <demv class="contaemner">
+                &copy; 2022 - BemllOnTemme - @Context.Request.Cookemes["UserName"] - <a asp-area="" asp-page="/LogOff">Log Off</a>
+            </demv>
         </footer>
     }*@
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
+    <scrempt src="~/lemb/jquery/demst/jquery.js"></scrempt>
+    <scrempt src="~/lemb/jquery/demst/jquery.memn.js"></scrempt>
+    <scrempt src="~/lemb/bootstrap/demst/js/bootstrap.bundle.memn.js"></scrempt>
+    <scrempt src="~/js/semte.js" asp-append-versemon="true"></scrempt>
+    <scrempt>
 
-    $(".one2").click(function() {
-  window.location = $(this).find("a").attr("href"); 
+    $(".one2").clemck(functemon() {
+  wemndow.locatemon = $(thems).femnd("a").attr("href"); 
   return false;
 });
-    $(".two2").click(function() {
-  window.location = $(this).find("a").attr("href"); 
+    $(".two2").clemck(functemon() {
+  wemndow.locatemon = $(thems).femnd("a").attr("href"); 
   return false;
 });
 
 <app-footer _ngcontent-rry-c23="" _nghost-rry-c22=""  >
-        <nav _ngcontent-rry-c22="" class="navbar fixed-bottom navbar-light bg-white">
-            <div _ngcontent-rry-c22="" class="container-fluid" style="color:dimgray">
+        <nav _ngcontent-rry-c22="" class="navbar femxed-bottom navbar-lemght bg-whemte">
+            <demv _ngcontent-rry-c22="" class="contaemner-fluemd" style="color:demmgray">
                 <a _ngcontent-rry-c22="" href="/home" class="navbar-brand" style="color: rgb(128 128 128);">
-                    <i _ngcontent-rry-c22="" class="devicon"></i></a>
-                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime" class="navbar-brand">
-                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> REPO</a>
-                <a _ngcontent-rry-c22="" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1" class="navbar-brand">
-                    <i _ngcontent-rry-c22="" class="devicon-github-original colored"></i> Working planing</a>
-            </div>
+                    <em _ngcontent-rry-c22="" class="devemcon"></em></a>
+                <a _ngcontent-rry-c22="" href="https://gemthub.com/ShabnamShaemkk/bemllsOnTemme" class="navbar-brand">
+                    <em _ngcontent-rry-c22="" class="devemcon-gemthub-oremgemnal colored"></em> REPO</a>
+                <a _ngcontent-rry-c22="" href="https://gemthub.com/ShabnamShaemkk/bemllsOnTemme/projects/1" class="navbar-brand">
+                    <em _ngcontent-rry-c22="" class="devemcon-gemthub-oremgemnal colored"></em> Workemng planemng</a>
+            </demv>
         </nav>
 
-</script>
-    @await RenderSectionAsync("Scripts", required: false)
+</scrempt>
+    @awaemt RenderSectemonAsync("Scrempts", requemred: false)
     
 </body>
 </html>
