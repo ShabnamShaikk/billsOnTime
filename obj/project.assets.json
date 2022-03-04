@@ -423,19 +423,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Murtaza\\.nuget\\packages\\": {}
+    "C:\\Users\\S542362\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Murtaza\\source\\repos\\Project1\\Deployment\\Deployment2\\Project1.csproj",
+      "projectUniqueName": "C:\\Users\\S542362\\Documents\\BillsOnTime\\Project1.csproj",
       "projectName": "Project1",
-      "projectPath": "C:\\Users\\Murtaza\\source\\repos\\Project1\\Deployment\\Deployment2\\Project1.csproj",
-      "packagesPath": "C:\\Users\\Murtaza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Murtaza\\source\\repos\\Project1\\Deployment\\Deployment2\\obj\\",
+      "projectPath": "C:\\Users\\S542362\\Documents\\BillsOnTime\\Project1.csproj",
+      "packagesPath": "C:\\Users\\S542362\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\S542362\\Documents\\BillsOnTime\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Murtaza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\S542362\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -488,7 +492,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
