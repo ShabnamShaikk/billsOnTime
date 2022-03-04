@@ -40,7 +40,7 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 **[Codacy](https://app.codacy.com/gh/ShabnamShaikk/billsOnTime/dashboard)</br>**
 
 # Useful Links for Application
-|  Link Name     | Clickable Links | 
+|  **Link Name**     | **Clickable Links** | 
 | :---        |    :----:   |   
 |Link to Heroku Depolyment    | [GO](billsontimeapp.herokuapp.com/)    | 
 | Link to Wiki |[GO](https://github.com/ShabnamShaikk/billsOnTime/wiki) |
