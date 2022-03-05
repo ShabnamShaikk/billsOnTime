@@ -34,7 +34,7 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 
 # Sites & Securtity
 **[DocFx](https://shabnamshaikk.github.io/billsontime-doc/)</br>**
-**[Swagger](https://github.com/ShabnamShaikk/swagger-billsontime)</br>**
+**[Swagger](https://shabnamshaikk.github.io/swagger-billsontime/)</br>**
 **[Hosted Launch Site/Contributor Guide](https://swetha34.github.io/bills-on-time-doc/)</br>**
 **[Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)</br>**
 **[Codacy](https://app.codacy.com/gh/ShabnamShaikk/billsOnTime/dashboard)</br>**
