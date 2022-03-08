@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Project1.styles.css" asp-append-version="true" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWYDMTZSZ2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWYDMTZSZ2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-CWYDMTZSZ2');
-</script>
+        gtag('config', 'G-CWYDMTZSZ2');
+    </script>
 </head>
 <body style="background:#f0f7f7">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="images\billimage.jpg" style="height:20%;width:10%"/> BillOnTime</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="images\billimage.jpg" style="height:20%;width:10%" /> BillOnTime</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,43 +31,39 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Home">Home</a>
                         </li>
-                       @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>*@
-
-                        
-
-
-
-
+                        @* <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                            </li>*@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/AddBill">AddBill</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/PayBill">PayBill</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/AllBill">AllBill</a>
                         </li>
-                        @if(Context.Request.Cookies["Username"] == null)
-     {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/SignUp">SignUp</a>
-                        </li>
-     }
-
-     @if(Context.Request.Cookies["Username"] != null)
-                         {
-                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/LogOff">LogOff</a>
-                        </li>
-                            
-                        }else{
-                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
-                        </li>
+                        @if (Context.Request.Cookies["Username"] == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/SignUp">SignUp</a>
+                            </li>
                         }
-                        
+
+                        @if (Context.Request.Cookies["Username"] != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/LogOff">LogOff</a>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                            </li>
+                        }
+
                     </ul>
                 </div>
             </div>
@@ -80,43 +76,38 @@
     </div>
 
     <<nav class="navbar fixed-bottom navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime"><i class="devicon-github-original colored" ></i>  Work Repo </a>
-      <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1"><i class="devicon-github-original colored" ></i>  Working Plan </a>
-      <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md"><i class="devicon-github-original colored" ></i> proposal</a>
-    </div>
-  </nav>
-    
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime"><i class="devicon-github-original colored"></i>  Work Repo </a>
+            <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime/projects/1"><i class="devicon-github-original colored"></i>  Working Plan </a>
+            <a class="navbar-brand" href="https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md"><i class="devicon-github-original colored"></i> proposal</a>
+        </div>
+    </nav>
 
-@*     @if(Context.Request.Cookies["Username"] != null)
-     {
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2022 - BillOnTime - @Context.Request.Cookies["UserName"] - <a asp-area="" asp-page="/LogOff">Log Off</a>
-            </div>
-        </footer>
-    }*@
+
+    @*     @if(Context.Request.Cookies["Username"] != null)
+         {
+            <footer class="border-top footer text-muted">
+                <div class="container">
+                    &copy; 2022 - BillOnTime - @Context.Request.Cookies["UserName"] - <a asp-area="" asp-page="/LogOff">Log Off</a>
+                </div>
+            </footer>
+        }*@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
 
-    $(".one2").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
-});
-    $(".two2").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
-});
-
-
-            </div>
-        </nav>
-
-</script>
+        $(".one2").click(function () {
+            window.location = $(this).find("a").attr("href");
+            return false;
+        });
+        $(".two2").click(function () {
+            window.location = $(this).find("a").attr("href");
+            return false;
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
-    
+
 </body>
 </html>
