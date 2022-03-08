@@ -12,10 +12,15 @@
 
   <ItemGroup>
     <Content Remove="Pages\Privacy.cshtml" />
+    <Content Remove="wwwroot\Imgs\billimage.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Pages\Account\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Imgs\billimage.jpg" />
   </ItemGroup>
 
   <ItemGroup>
