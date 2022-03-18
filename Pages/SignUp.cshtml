@@ -1,0 +1,134 @@
+﻿@page
+@model Project1.Pages.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link href="/css/signup.css" rel="stylesheet" id="signupcss">
+
+<script src="/js/sign_up_script.js"></script>
+<div class="login-reg-panel">
+    <div class="login-info-box">
+        <h2>Have an account?</h2>
+        <label id="label-register" for="log-reg-show">
+            <a id="ancLogin" asp-area="" asp-page="/Login">Log In</a>
+        </label>
+        <input type="checkbox" name="active-log-panel" id="log-reg-show" checked="checked">
+    </div>
+
+
+
+    <div class="white-panel">
+
+        <div class="register-show">
+            <form autocomplete="one-time-code" method="post">
+                <h2>REGISTER</h2>
+                <input id="FirstName" name="FirstName"
+                       autocomplete="one-time-code" type="text"
+                       placeholder="First Name"
+                       class="form-control input-md"
+                       required>
+                <input id="LastName" name="LastName" autocomplete="one-time-code"
+                       type="text" placeholder="Last Name" class="form-control input-md">
+
+                <input autocomplete="off" id="EmailID"
+                       name="EmailID" type="email" placeholder="User Id"
+                       class="form-control input-md" required>
+                <input autocomplete="one-time-code" id="Password"
+                       name="Password" onclick="return IsEmpty();"
+                       type="password" placeholder="Password"
+                       class="form-control input-md" required>
+
+                <div class="form-group">
+                    <label class="control-label" for="EmailID">Date of Birth</label>
+                    <div class="">
+                        <select id="Month" class="combo">
+                            @{
+                                var currnt = DateTime.Now.Month;
+                                var counter = currnt;
+                                for (int i = 1; i < 13; i++)
+                                {
+                                    if (counter > 12)
+                                    {
+                                        counter = 1;
+                                    }
+                                    <option value="@counter">@System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(counter)</option>
+                                    counter++;
+                                }
+                            }
+                        </select>
+                        <select id="Day" class="combo">
+                            @{
+                                counter = 1;
+                                for (int i = 1; i < 32; i++)
+                                {
+
+                                    <option>@counter</option>
+                                    counter++;
+                                }
+                            }
+                        </select>
+
+                        <select id="Year" class="combo">
+                            @{
+                                counter = 1980;
+                                for (int i = 1; i < DateTime.Now.Year; i++)
+                                {
+
+                                    <option>@counter</option>
+                                    counter++;
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="radios">Gender</label>
+                    <div class="">
+                        <label class="radio-inline" for="radios-0">
+                            <input type="radio" name="radios" id="radios" value="Male" checked="checked">
+                            Male
+                        </label>
+                        <label class="radio-inline" for="radios-1">
+                            <input type="radio" name="radios" id="radios" value="Female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Text input-->
+                @if (@ViewData["DataStatus"] != "S")
+                {
+                    <br />
+
+                    <input name="submit" type="submit" value="Register">
+                }
+
+                @if (@ViewData["DataStatus"] == "S")
+                {
+
+                    <p>User Added Succesfully!</p>
+                }
+                @if (@ViewData["DataStatus"] == "F")
+                {
+                    <br />
+                    <p>Something Went Wrong Please ReTry!</p>
+                    @if (@ViewData["EmStat"] == "E")
+                    {
+                        <p>User ID Taken, Please Try Again</p>
+                    }
+                }
+
+            </form>
+        </div>
+
+    </div>
+</div>
