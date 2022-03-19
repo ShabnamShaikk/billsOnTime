@@ -42,7 +42,7 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 # Useful Links for Application
 |  **Link Name**     | **Clickable Links** | 
 | :---        |    :----:   |   
-|Link to Heroku Depolyment    | [GO](https://billsontimeapp.herokuapp.com/)    | 
+|Link to Heroku Depolyment    | [GO](https://billsontimemain.herokuapp.com/)    | 
 | Link to Wiki |[GO](https://github.com/ShabnamShaikk/billsOnTime/wiki) |
 |Link to Issues| [GO](https://github.com/ShabnamShaikk/billsOnTime/issues) |
 |Link to Actions| [GO](https://github.com/ShabnamShaikk/billsOnTime/actions) |
