@@ -22,7 +22,7 @@ builder.Services
     .AddGitHub(o =>
     {
         o.ClientId = "Iv1.a185eddb3d2f8cb7";
-        o.ClientSecret = "628c096c3489dfd5d912b4274ac28c85f77fce81";
+        o.ClientSecret = "acf96dbacaedb4c9df06aec0d99fe7896dd6b5c4";
         o.CallbackPath = "/signingithub";
         o.SaveTokens=true;
         // Grants access to read a user's profile data.
