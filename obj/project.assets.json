@@ -1712,19 +1712,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s541909\\.nuget\\packages\\": {}
+    "C:\\Users\\S542362\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s541909\\Desktop\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
+      "projectUniqueName": "C:\\Users\\S542362\\Pictures\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
       "projectName": "Project1",
-      "projectPath": "C:\\Users\\s541909\\Desktop\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
-      "packagesPath": "C:\\Users\\s541909\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s541909\\Desktop\\billsOnTime-main\\billsOnTime-main\\obj\\",
+      "projectPath": "C:\\Users\\S542362\\Pictures\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
+      "packagesPath": "C:\\Users\\S542362\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\S542362\\Pictures\\billsOnTime-main\\billsOnTime-main\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\s541909\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\S542362\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1789,7 +1793,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
