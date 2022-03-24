@@ -21,9 +21,8 @@ builder.Services
     })
     .AddGitHub(o =>
     {
-        o.ClientId = "Iv1.d37fa5c13a71805b";
-        o.ClientSecret = "57a918f631a15d7a684d2acf248776a209f90900";
-        o.CallbackPath = "/signingithub";
+        o.ClientId = "4bdc4f0e491f661c2372";
+        o.ClientSecret = "00d09f6f6e04866fc5fa2bd50d92e7add9280816";
         o.SaveTokens=true;
         // Grants access to read a user's profile data.
         // https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps
