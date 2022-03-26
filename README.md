@@ -33,7 +33,7 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 
 
 # Sites & Securtity
-**[DocFx](https://shabnamshaikk.github.io/billsontime-doc/)</br>**
+**[DocFx](https://shabnamshaikk.github.io/billsontime-doc/api/index.html)</br>**
 **[Swagger](https://shabnamshaikk.github.io/swagger-billsontime/#/)</br>**
 **[Hosted Launch Site/Contributor Guide](https://swetha34.github.io/bills-on-time-doc/)</br>**
 **[Sonar Cloud](https://sonarcloud.io/project/overview?id=ShabnamShaikk_billsOnTime)</br>**
@@ -42,11 +42,11 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 # Useful Links for Application
 |  **Link Name**     | **Clickable Links** | 
 | :---        |    :----:   |   
-|Link to Heroku Depolyment    | [GO](https://billsontimemain.herokuapp.com/)    | 
+|Link to Heroku Depolyment    | [GO](billontime01.herokuapp.com/)    | 
 | Link to Wiki |[GO](https://github.com/ShabnamShaikk/billsOnTime/wiki) |
 |Link to Issues| [GO](https://github.com/ShabnamShaikk/billsOnTime/issues) |
 |Link to Actions| [GO](https://github.com/ShabnamShaikk/billsOnTime/actions) |
-|Link to Milestone| [GO](https://github.com/ShabnamShaikk/billsOnTime/milestones) |
+|Link to Milestones| [GO](https://github.com/ShabnamShaikk/billsOnTime/milestones) |
 |Link to RFP| [GO](https://github.com/ShabnamShaikk/billsOnTime/blob/main/rfp.md) |
 |Link to Project Board| [GO](https://github.com/ShabnamShaikk/billsOnTime/projects/1) |
 
