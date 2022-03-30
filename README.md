@@ -19,7 +19,7 @@ Frontend - html with bootstrap framework</br>
 Backend - .NET core with c#</br>
 Database - Mongo db</br>
 
-# Deployement & SetUp
+# Deployment & SetUp
 The application is build using Visual Studio 2022 and is deployed in hereko. </br>
 1.Download the Visual Studio Code installer for Windows.</br>
 2.Once it is downloaded, run the installer (VSCodeUserSetup-{version}.exe). This will only take a minute.</br>
