@@ -21,9 +21,9 @@ builder.Services
     })
     .AddGitHub(o =>
     {
-        o.ClientId = "JwwDoEMz2hJ6EtJbx983Lk1gUiO4Ryx5";
-        o.ClientSecret = "pbf1bDWKx6jwsALy4Z5QhgD_i7BxswZ3V8njr7wfnl-R6XN9DEYw-4tTmgHo7JBo";
-        o.CallbackPath = "https://billontime01.herokuapp.com/callback";
+        o.ClientId = "4bdc4f0e491f661c2372";
+        o.ClientSecret = "3ebe18a0d941a748e2c2cbacd81c55a558cb4d4f";
+        o.CallbackPath = "/signingithub";
         o.SaveTokens=true;
         // Grants access to read a user's profile data.
         // https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps
