@@ -37,7 +37,7 @@ namespace Project1.Pages.Account
             Schemes = await GetExternalProvidersAsync(HttpContext);
         }
 
-        public string OnPostForgotPassword(string submit, string Username, string Password, string Femail)
+        public void OnPostForgotPassword(string submit, string Username, string Password, string Femail)
         {
             if (submit == "Request")
             {
@@ -52,57 +52,78 @@ namespace Project1.Pages.Account
                 document.EmailID = Femail;
                 document.Type = "Fail";
                 collection2.InsertOne(document);
-                return "Success";
             }
-            else return "Failed";
         }
         public void OnPostLoginForgotPassword(string submit, string UNAMEHidden)
         {
             ViewData["Disp"] = "E";
         }
-
-        public LoginDetails IsUserAuthorized(string submit, string Username, string Password, string Femail)
-        {
-            var Cstring = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["ConnectionString"];
-            var client = new MongoClient(Cstring);
-
-            var dbList = client.ListDatabases().ToList();
-
-            var dbName = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["DatabaseName"];
-            var database = client.GetDatabase(dbName);
-
-            var collection = database.GetCollection<LoginDetails>("LoginDetails");
-            var aggResult = collection.Aggregate().ToList();
-            
-            var fuser = aggResult.Find(x => x.UserName == Username);
-           
-            if (fuser != null)
-            {
-                if (fuser.Password == Password)
-                {                   
-                    return fuser;
-                }
-                else return null;
-            }
-            else return null;
-
-        }
         public async Task OnPostLoginAsync(string submit, string Username, string Password, string Femail)
         {
             if (submit == "Log In")
             {
-                var fuser = IsUserAuthorized(submit, Username, Password, Femail);
+
+                //                var client = new MongoClient(
+                //    "mongodb+srv://<username>:<password>@<cluster-address>/test?w=majority"
+                //);
+                //                var database = client.GetDatabase("test");
+
+                var Cstring = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["ConnectionString"];
+                var client = new MongoClient(Cstring);
+
+                var dbList = client.ListDatabases().ToList();
+
+                var dbName = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetSection("ConnectionStrings")["DatabaseName"];
+                var database = client.GetDatabase(dbName);
+
+
+
+                //MongoCollection collection = (MongoCollection)database.GetCollection<LoginDetails>("LoginDetails");
+                //var query = collection.AsQueryable()
+                // .Where(p => p.Age > 21)
+                //.Select(p => new { p.UserName, p.Password });
+                var collection = database.GetCollection<LoginDetails>("LoginDetails");
+                var aggResult = collection.Aggregate().ToList();
+                //MongoCursor<LoginDetails> cursor = database.FindAllAs<LoginDetails>();
+                // cursor.SetLimit(5);
+                var fuser = aggResult.Find(x => x.UserName == Username);
+                // var list = cursor.ToList();
                 if (fuser != null)
                 {
-                    var claims = new List<Claim>{
+                    if (fuser.Password == Password)
+                    {
+                        var claims = new List<Claim>
+        {
             new Claim(ClaimTypes.Name, fuser.UserName),
             new Claim("FirstName", fuser.FirstName),
-            new Claim("LastName", fuser.LastName) };
+            new Claim("LastName", fuser.LastName)
+
+                    };
+
                     var claimsIdentity = new ClaimsIdentity(
                         claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     var authProperties = new AuthenticationProperties
                     {
+                        //AllowRefresh = <bool>,
+                        // Refreshing the authentication session should be allowed.
 
+                        //ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
+                        // The time at which the authentication ticket expires. A 
+                        // value set here overrides the ExpireTimeSpan option of 
+                        // CookieAuthenticationOptions set with AddCookie.
+
+                        //IsPersistent = true,
+                        // Whether the authentication session is persisted across 
+                        // multiple requests. When used with cookies, controls
+                        // whether the cookie's lifetime is absolute (matching the
+                        // lifetime of the authentication ticket) or session-based.
+
+                        //IssuedUtc = <DateTimeOffset>,
+                        // The time at which the authentication ticket was issued.
+
+                        //RedirectUri = <string>
+                        // The full path or absolute URI to be used as an http 
+                        // redirect response value.
                     };
 
                     await HttpContext.SignInAsync(
@@ -110,19 +131,32 @@ namespace Project1.Pages.Account
                         new ClaimsPrincipal(claimsIdentity),
                         authProperties);
 
-                    var results = User.Claims;
-                    Response.Redirect("Home");
+                        //Response.Cookies.Append("Name", fuser.UserName);
+
+                        //Response.Cookies.Append("FirstName", fuser.FirstName);
+                        //Response.Cookies.Append("LastName", fuser.LastName);
+                        var results = User.Claims;
+                        Response.Redirect("Home");
                 }
                 else
                 {
                     ViewData["Lerror"] = "T";
                 }
+
             }
+            else
+            {
+                ViewData["Lerror"] = "T";
+            }
+        }
+
+
+
             if (submit == "Forgot Password")
             {
                 ViewData["Disp"] = "E";
             }
-        }
+}
 
 
 
@@ -179,7 +213,7 @@ private static async Task<bool> IsProviderSupportedAsync(HttpContext context, st
     public string EmailID { get; set; }
 }
 
-public class LoginDetails
+internal class LoginDetails
 {
 
     [BsonElement("_id")]
