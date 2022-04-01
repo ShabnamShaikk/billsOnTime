@@ -1,0 +1,95 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\syedd\\Downloads\\billsOnTime-main (3) (1)\\billsOnTime-main\\billsOnTime-main\\Project1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\syedd\\Downloads\\billsOnTime-main (3) (1)\\billsOnTime-main\\billsOnTime-main\\Project1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\syedd\\Downloads\\billsOnTime-main (3) (1)\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
+        "projectName": "Project1",
+        "projectPath": "C:\\Users\\syedd\\Downloads\\billsOnTime-main (3) (1)\\billsOnTime-main\\billsOnTime-main\\Project1.csproj",
+        "packagesPath": "C:\\Users\\syedd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\syedd\\Downloads\\billsOnTime-main (3) (1)\\billsOnTime-main\\billsOnTime-main\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\syedd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AspNet.Security.OAuth.GitHub": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2021.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OAuth": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Octokit": {
+              "target": "Package",
+              "version": "[0.50.0, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
