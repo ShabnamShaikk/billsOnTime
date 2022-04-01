@@ -1,0 +1,92 @@
+﻿@page
+@model Project1.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/css/login.css" rel="stylesheet" id="loginCSS" />
+
+<script src="/js/login_script.js"></script>
+
+
+<div class="login-reg-panel">
+    <div class="register-info-box">
+        <h2>Don't have an account?</h2>
+
+        <label id="label-register" for="log-login-show">
+            <a id="ancRegister" asp-area="" asp-page="/SignUp">SignUp</a>
+        </label>
+        <input type="radio" name="active-log-panel" id="log-login-show">
+    </div>
+
+    <div class="white-panel">
+        <div class="login-show">
+            @if (@ViewData["Disp"] != "E")
+            {
+                <form method="post" asp-page-handler="Login" id="frmLogin">
+                    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                    <h2>LOGIN</h2>
+
+                    <input name="Username" type="email" asp-for="Credential.UserName" class="form-control" placeholder="Email" required id="txtUNAME" onkeyup="fnUNAMEKeyUp()" />
+
+                    <input name="Password" type="password" asp-for="Credential.Password" class="form-control" placeholder="Password" required id="txtPWD" />
+
+                    <input name="submit" type="submit" id="btnLogin" value="Log In" class="btn btn-primary" />
+                    <br />
+                </form>
+                <br />
+                @if (Model != null && Model.Schemes != null)
+                {
+                    @foreach (var scheme in Model.Schemes.OrderBy(p => p.DisplayName))
+                    {
+                        <form asp-page="Login" method="post" asp-page-handler="LoginExternal">
+                            <input type="hidden" name="Provider" value="@scheme.Name" />
+                            <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
+
+                            <button class="btn btn-light" id="btnGithub" type="submit"><i class="fa fa-github"></i> Sign in using @scheme.DisplayName</button>
+
+
+                        </form>
+                    }
+                }
+
+                <br />
+                <form method="post" asp-page-handler="LoginForgotPassword" id="frmLoginForgotPassword">
+                    <input type="hidden" id="UNAMEHidden" name="UNAMEHidden" />
+                    <input name="submit" type="submit" id="btnForgotPassword" value="Forgot Password?" class="btn btn-light" />
+                </form>
+
+            }
+
+            @if (ViewData["Lerror"] == "T")
+            {
+                <p>Please Re-try, User Name or Password Incorrect</p>
+            }
+
+            @if (@ViewData["Disp"] == "E")
+            {
+                <br />
+
+                <br />
+                <div class="Form-group row">
+                    <div class="">
+                        <label>Provide Your Email ID</label>
+                    </div>
+
+                    <form method="post" asp-page-handler="ForgotPassword">
+                        <input name="Femail" type="email" class="form-control" placeholder="Please Enter Your Valid Email ID" />
+                        <input name="submit" type="submit" value="Request" class="btn btn-light" id="btnRequest" />
+                    </form>
+
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+</div>
