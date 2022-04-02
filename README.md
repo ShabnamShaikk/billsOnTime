@@ -30,7 +30,18 @@ Alternatively, you can also download a Zip archive, extract it and run Code from
 
 **Tip**: Setup will add Visual Studio Code to your %PATH%, so from the console you can type 'code .' to open VS Code on that folder. You will need to restart your console after the installation for the change to the %PATH% environmental variable to take effect.
 
+# Testing
+We have used **Munit** testing for our applications.</br>
 
+> - Open the NuGet Package Manager for your solution by navigating to Tools > NuGet Package Manager > Manage NuGet Packages for Solution.
+
+> - Click on the Updates tab and search for MSTest, NUnit, or xUnit test adapters that are installed.
+
+> - Select each test adapter, and then select the latest stable version in the drop-down menu.
+
+> - Choose the Install button.
+
+[Reference Link](https://www.mulesoft.com/exchange/org.mule.examples/munit-short-tutorial/)
 
 # Sites & Securtity
 **[DocFx](https://shabnamshaikk.github.io/billsontime-doc/api/index.html)</br>**
