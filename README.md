@@ -43,7 +43,7 @@ We have used **Munit** testing for our applications.</br>
 
 [Reference Link](https://www.mulesoft.com/exchange/org.mule.examples/munit-short-tutorial/)
 
-# Sites & Securtity
+# Sites & Security
 **[DocFx](https://shabnamshaikk.github.io/billsontime-doc/api/index.html)</br>**
 **[Swagger](https://shabnamshaikk.github.io/swagger-billsontime/#/)</br>**
 **[Hosted Launch Site/Contributor Guide](https://swetha34.github.io/bills-on-time-doc/)</br>**
