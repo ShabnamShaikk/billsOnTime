@@ -100,7 +100,7 @@ namespace Project1.Pages
             {
                 if (ex.Message.Contains("Timeout"))
                 {
-                    Response.Redirect("There is a glitch with call back.");
+                    Response.Redirect("Error");
                 }
             }
 
